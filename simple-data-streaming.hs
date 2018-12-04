@@ -6,4 +6,4 @@
 import ClassyPrelude.Conduit
 
 main :: IO ()
-main = yieldMany [1..10] $$ mapM_C print
+main = runConduit $ yieldMany [1..10] .| mapM_C print
