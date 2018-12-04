@@ -7,6 +7,9 @@ import ClassyPrelude.Conduit
 
 main :: IO ()
 main = do
+  sum <- runConduit $ yieldMany [1..10] .| sumC
+  print sum
+
   total <- runConduit $ yieldMany [1..10] .| mapC (* 10) .| sumC
   print total
 
