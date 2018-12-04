@@ -1,5 +1,5 @@
 #!/usr/bin/env stack
--- stack --resolver nightly-2016-09-10 --install-ghc runghc --package classy-prelude-conduit
+-- stack --resolver lts-12.20 --install-ghc runghc --package classy-prelude-conduit
 
 {-# LANGUAGE NoImplicitPrelude #-}
 {-# LANGUAGE OverloadedStrings #-}
